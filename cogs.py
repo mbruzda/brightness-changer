@@ -5,7 +5,7 @@ from monitorcontrol import get_monitors
 def switch():
     for monitor in get_monitors():
         with monitor:
-            if monitor.get_luminance() >= 50:
+            if get_brightness() >= 50:
                 monitor.set_luminance(0)
             else:
                 monitor.set_luminance(100)
