@@ -27,7 +27,7 @@ class Application(tk.Frame):
 
     def update_brightness(self, luminance):
         luminance=self.slider.get()
-        cogs.set(luminance)
+        cogs.set_brightness(luminance)
      
     def switch_kill(self):
         cogs.switch()
